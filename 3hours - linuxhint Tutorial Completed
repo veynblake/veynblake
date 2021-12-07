@@ -92,13 +92,13 @@ function ForLoop()
     echo $przerw
 }
 
-#function InputFile()
-#{
-#    while read line
-#    do
-#        echo "$line"
-#    done < "${1:-/dev/stdin}"
-#}
+function InputFile()
+{
+    while read line
+    do
+        echo "$line"
+    done < "${1:-/dev/stdin}"
+}
 
 function OutputFile()
 {
@@ -396,7 +396,7 @@ function main()
 	#GrepWyszukiwanieSlowaWPliku
 	#AwkPokazywanieSlowaZPliku
 	#SedZastepywanieSlowaZPliku
-	Debugging
+	#Debugging
 }  
 
 main
