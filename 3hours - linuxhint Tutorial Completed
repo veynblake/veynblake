@@ -1,0 +1,402 @@
+#!/bin/bash
+przerw="=========="
+function Hello()
+{
+    echo "Hello World"
+    echo $przerw
+}
+
+function File()
+{
+    echo "XD" > file.txt
+    echo "success"
+    echo $przerw
+}
+
+function Statement()
+{
+    count=10
+    
+    if (( $count < 9 ))
+    then
+        echo "first condition is true"
+        
+    elif (( $count > 9 ))
+    then
+        echo "second condition is true"
+    
+    else
+        echo "the condition is false"
+    fi
+    echo $przerw
+}
+
+function AndOperator()
+{
+    age=30
+    
+    if (( $age > 18 )) && (( $age < 40 ))
+    then
+        echo "Age is correct"
+    else
+        echo "Age is not correct"
+    fi
+    echo $przerw
+}
+
+function OrOperator()
+{
+    age=30
+    
+    if (( $age > 18 )) || (( $age < 40 ))
+    then
+        echo "Age is correct"
+    else
+        echo "Age is not correct"
+    fi
+    echo $przerw
+}
+
+function WhileLoop()
+{
+    number=1
+    while (( $number <= 3 ))
+    do
+        echo "$number"
+        number=$(( number+1 ))
+    done
+    echo $przerw
+}
+
+function UntilLoop()
+{
+    number=1
+    until (( $number >= 3 ))
+    do
+        echo "$number"
+        number=$(( number+1 ))
+    done
+    echo $przerw
+}
+
+function ForLoop()
+{
+    for (( i=1; i<=4; i++ ))
+    do
+        if [ $i -eq 1 ] || [ $i -eq 4 ]
+        then
+            continue
+        fi
+        echo $i
+    done
+    echo $przerw
+}
+
+#function InputFile()
+#{
+#    while read line
+#    do
+#        echo "$line"
+#    done < "${1:-/dev/stdin}"
+#}
+
+function OutputFile()
+{
+    ls -al >& file1.txt
+    echo "success"
+    echo $przerw
+}
+
+function Pipes()
+{
+    MESSAGE="Hello World"
+    export MESSAGE
+    ./secondScript.sh
+    echo $przerw
+}
+
+function StringProcessing()
+{
+    echo "enter 1st string"
+    read st1
+    echo "enter 2nd string"
+    read st2
+    if [ "$st1" \< "$st2" ]
+    then
+        echo "$st1 is smaller than $st2"
+    elif [ "$st1" \> "$st2" ]
+    then
+        echo "$st2 is smaller than $st1"
+    else 
+        echo "both string are equal"
+    fi
+    echo $przerw
+}
+
+function SmallToLarge()
+{
+    echo "enter word"
+    read word
+    echo ${word^}
+    echo ${word^^}
+    echo $przerw
+}
+
+function HexToDec()
+{
+	echo "Enter Hex Number of your choice"
+	read Hex
+
+	echo -n "The decimal value of $Hex is: "
+
+	echo "obase=10; ibase=16; $Hex" | bc
+	echo $przerw
+}
+
+function NumbersAndArithmetic()
+{
+    
+    n1=4
+    n2=20
+    
+    echo $(expr $n1 + $n2)
+    echo $(expr $n1 - $n2)
+    echo $(expr $n1 \* $n2)
+    echo $(expr $n1 / $n2)
+    echo $(expr $n1 % $n2)
+    echo $przerw
+}
+
+function Arrays()
+{
+	car=('BMW' 'Toyota' 'Honda' 'Rover')
+	unset car[2]
+	car[2]='Mercedese'
+
+	echo "${car[@]}"
+	echo "${car[1]}"
+	echo "${!car[@]}"
+	echo "${#car[@]}"
+}
+
+function CreateDirectory()
+{
+	mkdir -p Directory2
+}
+
+function CheckDirectory()
+{
+	echo "Enter directory name to check"
+	read direct
+	
+	if [ -d "$direct" ]
+	then
+		echo "$direct exists"
+	else
+		echo "$direct doesn't exist"
+	fi	
+}
+
+function CreateFile()
+{
+	echo "Enter the file name to create"
+	read fileName
+		
+	touch $fileName
+}
+
+function CheckFile()
+{
+	echo "Enter filename to check"
+	read fileName
+	
+	if [ -f "$fileName" ]
+	then
+		echo "$fileName exists"
+	else
+		echo "$fileName doesn't exist"
+	fi	
+}
+
+function EnterTextFile()
+{
+	echo "Enter filename in which you want to append"
+	read fileName
+	
+	if [[ -f "$fileName" ]]
+	then
+		echo "Enter the text that you want to append"
+		read fileText
+		echo "$fileText" >> $fileName
+	else
+		echo "$fileName doesn't exist"
+	fi	
+}
+
+function ReadTextFile()
+{
+	echo "Enter filename from which you want to read"
+	read fileName
+	
+	if [[ -f "$fileName" ]]
+	then
+		while IFS= read -r line
+		do
+			echo "$line"
+		done < $fileName
+	else
+		echo "$fileName doesn't exist"
+	fi	
+}
+
+function DeleteFile()
+{
+	echo "Enter filename from which you want to read"
+	read fileName
+	
+	if [[ -f "$fileName" ]]
+	then
+		rm $fileName
+		echo "file has been deleted successfully"
+	else
+		echo "$fileName doesn't exist"
+	fi	
+}
+
+function SelectCase()
+{
+	select car in BMW MERCEDES TESLA ROVER TOYOTA
+	do
+		case $car in
+		BMW)
+			echo "BMW SELECTED";;
+		MERCEDES)
+			echo "MERCEDES SELECTED";;
+		TESLA)
+			echo "TESLA SELECTED";;
+		ROVER)
+			echo "ROVER SELECTED";;
+		TOYOTA)
+			echo "TOYOTA SELECTED";;
+		*)
+			echo "ERROR: Please select between 1..5";;
+		esac						
+	done
+}
+
+function WaitingForPress()
+{
+	echo "press any key to continue"
+	while [ true ]
+	do
+		read -t 3 -n 1
+	if [ $? = 0 ]
+	then
+		echo "you have terminated the script"
+		exit;
+	else
+		echo "waiting for you to press the key sir!"
+	fi
+	done
+}
+
+function InotifyZdarzeniaWPlikach
+{
+	mkdir -p temp/NewFolder
+	inotifywait -m temp/NewFolder
+}
+
+function GrepWyszukiwanieSlowaWPliku
+{
+	echo "Enter filename to search text from"
+	read fileName
+	
+	if [[ -f $fileName ]]
+	then
+		echo "Enter the text to search"
+		read grepvar
+		grep -i -n -c -v $grepvar $fileName
+		
+	else
+		echo "$fileName doesn't exist"
+	fi
+}
+
+function AwkPokazywanieSlowaZPliku()
+{
+	echo "Enter filename to print from awk"
+	read fileName
+	
+	if [[ -f $fileName ]]
+	then
+		
+		awk '/Windows/ {print $2, $4}' $fileName
+		
+	else
+		echo "$fileName doesn't exist"
+	fi
+}
+
+function SedZastepywanieSlowaZPliku()
+{
+	echo "Enter filename to substitute using sed"
+	read fileName
+	
+	if [[ -f $fileName ]]
+	then
+		sed -i 's/LInux/Unix/g' $fileName
+	else
+		echo "$fileName doesn't exist"
+	fi
+}
+
+function Debugging()
+{
+	set -x
+	echo "Enter filename to substitute using sed"
+	read fileName
+	set +x
+	
+	if [[ -f $fileName ]]
+	then
+		sed -i 's/LInux/Unix/g' $fileName
+	else
+		echo "$fileName doesn't exist"
+	fi
+}
+
+function main()
+{
+    	#Hello
+    	#File
+    	#Statement
+    	#AndOperator
+    	#OrOperator
+    	#WhileLoop
+    	#UntilLoop
+    	#ForLoop
+    	#InputFile
+    	#OutputFile
+	#Pipes
+    	#StringProcessing
+   	#SmallToLarge
+	#HexToDec
+    	#NumbersAndArithmetic
+	#Arrays
+	#CreateDirectory
+	#CheckDirectory
+	#CreateFile
+	#CheckFile
+	#EnterTextFile
+	#ReadTextFile
+	#DeleteFile
+	#SelectCase
+	#WaitingForPress
+	#InotifyZdarzeniaWPlikach
+	#GrepWyszukiwanieSlowaWPliku
+	#AwkPokazywanieSlowaZPliku
+	#SedZastepywanieSlowaZPliku
+	Debugging
+}  
+
+main
