@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "Podaj pierwsza liczbe: "
+read a
+echo "Podaj druga liczbe: "
+read b
+echo "Podaj operacje +, -, *, /"
+read operator
+
+if [ $operator = "+" ]
+then
+	op=`expr $a + $b`
+	echo "$op"
+
+elif [ $operator = "-" ]
+then
+	op=`expr $a - $b`
+	echo "$op"
+
+elif [ $operator = "*" ]
+then
+	op=`expr $a * $b`
+	echo "$op"
+
+elif [ $operator = "/" ]
+then
+	op=`expr $a / $b`
+	echo "$op"
+fi
