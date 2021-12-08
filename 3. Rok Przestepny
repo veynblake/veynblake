@@ -1,0 +1,17 @@
+#! /bin/bash
+
+function RokPrzestepny()
+{
+	for (( ;; ))
+	do
+	read rok
+		if (( $rok%4==0 ))
+	then
+		echo "$rok jest przestepny"
+	
+	else
+		echo "$rok nie jest przestepny"
+	fi
+	done
+}
+RokPrzestepny
