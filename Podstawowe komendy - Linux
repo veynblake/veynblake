@@ -1,0 +1,25 @@
+ls - wyświetlanie zawartości katalogu
+cd - przechodzenie do katalogu
+pwd - wyswietlenie w jakim katalogu aktualnie jestesmy
+cp - kopiowanie plikow/katalogow
+df - diskfree, wyswietla informacje o wolnym miejscu w systemie
+du - syswietla rozmiar pliku/katalogu
+mv - przenosi plik lub katalog do innego
+rm - usuwa plik
+mkdir - tworzy katalog
+rmdir - usuwa katalog
+locate - znajduje położenie pliku/katalogu
+find - wyszukuje pliki o zadanych parametrach
+grep - wyszukiwanie slowa w pliku
+echo - wyswietlanie na ekranie napisu
+cat - wyswietla zawartosc pliku, jesli tekst nie miesci sie na ekranie, pokaze sie koniec ktory miesci sie na ekranie
+more - wyswietla zawartosc calego pliku
+less - wyswietla zawartosc, wyszukuje slowa
+id - pokazuje numer identyfikacyjny aktualnego uzytkownika
+whoami - pokazuje na jakim uzytkowniku jestesmy zalogowani
+who - pokazuje aktualnie zalogowanych uzytkownikow
+vim - edytor plikow
+nano - edytor plikow
+touch - stworz plik
+date - pokazuje date i godzine
+time - pokazuje czas w ktorym zostalo wykonane zadanie
