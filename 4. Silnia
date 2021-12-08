@@ -1,0 +1,13 @@
+#! /bin/bash
+
+silnia=1
+if (( $1<=0 ))
+then
+	echo $silnia
+else
+for (( i=1; i<="$1"; i++ ))
+do
+	silnia=$(($silnia * $i))
+done
+	echo $silnia
+fi
