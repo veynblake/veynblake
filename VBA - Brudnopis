@@ -16,6 +16,7 @@ Dim MovieRating As Single - Dodaje zmienną przecinkową
 Dim MovieRating As Date - Dodaje zmienną datową
 Dim MyCell As Range - Dodaje zmienną komórkową
 Dim MyWS As Worksheet - Dodaje zmienną arkuszową
+Dim MsgBoxResult As VbMsgBoxResult - Dodaje zmienną alertową
 Name = "Tekst Zmiennej" - Zmienna Name przybiera wartośc string "Tekst Zmiennej"
 Set MyCell = Range("A1") - Przypisuje do zmiennej MyCell komórkę "A1"
 Option Explicit - wymusza deklaracje wszystkich zmiennych. Option Explicit pozwala uchronić przed błędami powstałymi na skutek niepoprawnego wpisania nazwy zmiennej
@@ -41,6 +42,14 @@ Workbooks("Zeszyt4.xlsm").Close True - Zamyka plik excel o nazwie "Zeszyt3" i za
 Workbooks.Open "C:\Users\Patryk\Desktop\VBA\test.xlsm" - Otwiera plik z podanej ścieżki
 Workbooks("mojemakro.xlsm").SaveAs "dsadsa.xlsm" - Kopiuje i zapisuje plik "mojemakro.xlsm" jako "dsadsa.xlsm"
 MsgBox MovieName & " was added" - Wyświetla alert pokazujący "<zmienna MovieName> was added"
+MsgBox "Good Morning", vbCritical - Wyświetla alert krytyczny
+MsgBox "Good Morning", vbExclamation - Wyświetla alert ostrzegawczy (z wykrzyknikiem)
+MsgBox "Good Morning", bOKCancel - Wyświetla alert który dodaje opcję "Anuluj"
+MsgBox "Good Morning", vbCritical + vbOKCancel, "Welcome Message" - Wyświetla alert ostrzegawczy, alert który dodaje opcję Anuluj i nagłówkiem komunikatu to "Welcome Message"
+MsgBox Prompt:=Message, Buttons:=vbOKCancel, Title:="Welcome Message" - Wyświetla alert zmiennej Message z opcją "Anuluj" i nagłówkiem komunikatu "Welcome Message"
+MsgBox vbNewLine - Dodaje nową linię w alercie
+MsgBox "Do you like coffee?", vbYesNo - Wyświetla alert który ma opcję "Tak" lub "Nie"
+If -> Then -> Else -> End If - Jeśli coś -> to wykonaj -> jeśli nie to wykonaj -> Zakończ If
 Public MovieName As String - Zmienna MovieName staje się publiczna i można jej używać w innych modułach
 
 
