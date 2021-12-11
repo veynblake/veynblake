@@ -4,6 +4,8 @@ End Sub - Kończy procedurę
 Worksheets - Praca na arkuszu
 Workbooks - Praca na innym pliku excel
 Worksheets.Add - Dodaj nowy arkusz
+Worksheets.Add After:=Sheets(Sheets.Count) - Dodaje arkusz na końcu listy
+Worksheets("Movie List").Copy :=Worksheets("Test") - Kopiuje arkusz "Movie List" do nowego arkusza, który jest na liście po arkuszu "Test"
 Range("A1").Value = "Name" - Dodaj do komórki A1 wartość "Name"
 Range("A1").Font.Italic = True - Dodaj do komórki A1 pochylenie
 Range("A1:B1").Interior.Color = vbBlue - Dodaj do komórki A1:B1 kolor niebieski
@@ -19,6 +21,15 @@ Range("A1").End(xlDown).Offset(1, 0).Value = Range("A1").End(xlDown).Value + 1 -
 Range("A1").End(xlDown).Offset(0, 1).Value = "Forrest Gump" - Wybiera komórkę A1, zjeżdza na sam dół, zaznacza jedną komórkę w prawo i dodaje do niej wartość "Forrest Gump"
 Range("B3", Range("B3").End(xlDown)).Font.Italic = True - Od komórki B3 do ostatniej wpisanej komórki gdzie jest wartość dodaje kursywe
 Range("A1").CurrentRegion.Copy Range("A20") - Kopiuje zakres od komórki A3 do ostatniego wiersza przed pustym wierszem i wkleja wszystko co skopiował do wiersza zaczynającego się od A20
+Worksheets("Sheet1").Select - Przełącza się na arkusz o nazwie "Sheet1"
+Worksheets("Movies").Select False - Zaznacza arkusz o nazwie "Movies", czyli jeśli coś zrobimy w innym arkuszu, to samo się stanie w arkuszu "Movies"
+Charts("Wykres1").Select - Zaznacza wykres (wykres nie jest zwyklym arkuszem i potrzebny inny kod aby go wybrać)
+Worksheets("Arkusz8").Delete - Usuwa arkusz o nazwie "Arkusz8"
+Application.DisplayAlerts = False - Wyłącza alerty np. czy chcesz usunąć arkusz
+Worksheets("Movie List").Copy - Kopiuje arkusz "Movie List" do nowego pliku excel
+Worksheets("Movie List").Name = "Test100" - Zmienia nazwę arkusza "Movie List" na "Test100"
+Worksheets("Test100").Visible = False - Ukrywa arkusz o nazwie "Test100"
+
 
 
 Klawisz F8 - wykonuje program krok po kroku
