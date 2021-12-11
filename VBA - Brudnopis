@@ -51,6 +51,7 @@ MsgBox vbNewLine - Dodaje nową linię w alercie
 MsgBox "Do you like coffee?", vbYesNo - Wyświetla alert który ma opcję "Tak" lub "Nie"
 If -> Then -> Else -> End If - Jeśli coś -> to wykonaj -> jeśli nie to wykonaj -> Zakończ If
 Public MovieName As String - Zmienna MovieName staje się publiczna i można jej używać w innych modułach
-
+With Range("A1") -> .Font.Color -> End With - Dodaj do komórki A1 -> parametry takie jak np .Font.Color -> i zakończ With
+With.Font -> .Color -> End With - Dodaj do .Font -> .Color -> i zakończ With 
 
 Klawisz F8 - wykonuje program krok po kroku
