@@ -11,6 +11,8 @@ Range("A1").Font.Italic = True - Dodaj do komórki A1 pochylenie
 Range("A1:B1").Interior.Color = vbBlue - Dodaj do komórki A1:B1 kolor niebieski
 Range("A1:B1").Interior.Color = RGB(189, 215, 238) - Dodaj do komórki A1:B1 kolor RGB
 Dim Name As String - Dodawanie zmiennej (Zmienna o nazwie "Name" która jest Stringiem (As=jako))
+Dim MovieRating As Single - Dodaje zmienną przecinkową
+Dim MovieRating As Date - Dodaje zmienną datową 
 Name = "Tekst Zmiennej" - Zmienna Name przybiera wartośc string "Tekst Zmiennej"
 Option Explicit - wymusza deklaracje wszystkich zmiennych. Option Explicit pozwala uchronić przed błędami powstałymi na skutek niepoprawnego wpisania nazwy zmiennej
 Range("A15").Select - Zaznacza komórkę A15
@@ -34,6 +36,8 @@ Workbooks("Zeszyt3").Close - Zamyka plik excel o nazwie "Zeszyt3"
 Workbooks("Zeszyt4.xlsm").Close True - Zamyka plik excel o nazwie "Zeszyt3" i zapisuje, nie pytając czy napewno chcesz zamknąć bez zapisywania
 Workbooks.Open "C:\Users\Patryk\Desktop\VBA\test.xlsm" - Otwiera plik z podanej ścieżki
 Workbooks("mojemakro.xlsm").SaveAs "dsadsa.xlsm" - Kopiuje i zapisuje plik "mojemakro.xlsm" jako "dsadsa.xlsm"
+MsgBox MovieName & " was added" - Wyświetla alert pokazujący "<zmienna MovieName> was added"
+Public MovieName As String - Zmienna MovieName staje się publiczna i można jej używać w innych modułach
 
 
 Klawisz F8 - wykonuje program krok po kroku
