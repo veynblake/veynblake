@@ -29,7 +29,11 @@ Application.DisplayAlerts = False - Wyłącza alerty np. czy chcesz usunąć ark
 Worksheets("Movie List").Copy - Kopiuje arkusz "Movie List" do nowego pliku excel
 Worksheets("Movie List").Name = "Test100" - Zmienia nazwę arkusza "Movie List" na "Test100"
 Worksheets("Test100").Visible = False - Ukrywa arkusz o nazwie "Test100"
-
+Workbooks("Zeszyt3").Activate - Aktywuje plik excel o nazwie "Zeszyt3"
+Workbooks("Zeszyt3").Close - Zamyka plik excel o nazwie "Zeszyt3"
+Workbooks("Zeszyt4.xlsm").Close True - Zamyka plik excel o nazwie "Zeszyt3" i zapisuje, nie pytając czy napewno chcesz zamknąć bez zapisywania
+Workbooks.Open "C:\Users\Patryk\Desktop\VBA\test.xlsm" - Otwiera plik z podanej ścieżki
+Workbooks("mojemakro.xlsm").SaveAs "dsadsa.xlsm" - Kopiuje i zapisuje plik "mojemakro.xlsm" jako "dsadsa.xlsm"
 
 
 Klawisz F8 - wykonuje program krok po kroku
