@@ -1,0 +1,19 @@
+Sub EnterDetails()  - Tworzy procedurę
+End Sub - Kończy procedurę
+'Comment 1 - Komentarz
+Worksheets - Praca na arkuszu
+Workbooks - Praca na innym pliku excel
+Worksheets.Add - Dodaj nowy arkusz
+Range("A1").Value = "Name" - Dodaj do komórki A1 wartość "Name"
+Range("A1").Font.Italic = True - Dodaj do komórki A1 pochylenie
+Range("A1:B1").Interior.Color = vbBlue - Dodaj do komórki A1:B1 kolor niebieski
+Range("A1:B1").Interior.Color = RGB(189, 215, 238) - Dodaj do komórki A1:B1 kolor RGB
+
+
+
+
+
+
+
+
+Klawisz F8 - wykonuje program krok po kroku
