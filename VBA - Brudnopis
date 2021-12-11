@@ -10,10 +10,14 @@ Range("A1").Value = "Name" - Dodaj do komórki A1 wartość "Name"
 Range("A1").Font.Italic = True - Dodaj do komórki A1 pochylenie
 Range("A1:B1").Interior.Color = vbBlue - Dodaj do komórki A1:B1 kolor niebieski
 Range("A1:B1").Interior.Color = RGB(189, 215, 238) - Dodaj do komórki A1:B1 kolor RGB
+MyCell.Font.Color = vbWhite - Dodaje kolor czcionki do zmiennej MyCell, która ma przypisaną jakąś komórkę 
 Dim Name As String - Dodawanie zmiennej (Zmienna o nazwie "Name" która jest Stringiem (As=jako))
 Dim MovieRating As Single - Dodaje zmienną przecinkową
-Dim MovieRating As Date - Dodaje zmienną datową 
+Dim MovieRating As Date - Dodaje zmienną datową
+Dim MyCell As Range - Dodaje zmienną komórkową
+Dim MyWS As Worksheet - Dodaje zmienną arkuszową
 Name = "Tekst Zmiennej" - Zmienna Name przybiera wartośc string "Tekst Zmiennej"
+Set MyCell = Range("A1") - Przypisuje do zmiennej MyCell komórkę "A1"
 Option Explicit - wymusza deklaracje wszystkich zmiennych. Option Explicit pozwala uchronić przed błędami powstałymi na skutek niepoprawnego wpisania nazwy zmiennej
 Range("A15").Select - Zaznacza komórkę A15
 Selection.Value = 13 - Przypisuje zaznaczonej komórce wartośc 13
@@ -21,7 +25,7 @@ Selection.Value = #7/6/1994# - Przypisuje zaznaczonej komórce datę (# powinno 
 Worksheets("Sheet1").Range("A16").Value = 14 - W arkuszu "Sheet1" dodaje do komórki A1 wartośc 14
 Range("A1").End(xlDown).Offset(1, 0).Value = Range("A1").End(xlDown).Value + 1 - Wybiera komórkę A1, zjeżdza na sam dół, zaznacza jedna komorke w dół, i dodaje do niej ostatnią wpisaną wartość +1
 Range("A1").End(xlDown).Offset(0, 1).Value = "Forrest Gump" - Wybiera komórkę A1, zjeżdza na sam dół, zaznacza jedną komórkę w prawo i dodaje do niej wartość "Forrest Gump"
-Range("B3", Range("B3").End(xlDown)).Font.Italic = True - Od komórki B3 do ostatniej wpisanej komórki gdzie jest wartość dodaje kursywe
+Range("B3"), Range("B3").End(xlDown))..Italic = True - Od komórki B3 do ostatniej wpisanej komórki gdzie jest wartość dodaje kursywe
 Range("A1").CurrentRegion.Copy Range("A20") - Kopiuje zakres od komórki A3 do ostatniego wiersza przed pustym wierszem i wkleja wszystko co skopiował do wiersza zaczynającego się od A20
 Worksheets("Sheet1").Select - Przełącza się na arkusz o nazwie "Sheet1"
 Worksheets("Movies").Select False - Zaznacza arkusz o nazwie "Movies", czyli jeśli coś zrobimy w innym arkuszu, to samo się stanie w arkuszu "Movies"
