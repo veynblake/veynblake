@@ -15,10 +15,10 @@ Range("A15").Select - Zaznacza komórkę A15
 Selection.Value = 13 - Przypisuje zaznaczonej komórce wartośc 13
 Selection.Value = #7/6/1994# - Przypisuje zaznaczonej komórce datę (# powinno się tego używać # 16 Jul 2010 = 07/16/2010)
 Worksheets("Sheet1").Range("A16").Value = 14 - W arkuszu "Sheet1" dodaje do komórki A1 wartośc 14
-
-
-
-
+Range("A1").End(xlDown).Offset(1, 0).Value = Range("A1").End(xlDown).Value + 1 - Wybiera komórkę A1, zjeżdza na sam dół, zaznacza jedna komorke w dół, i dodaje do niej ostatnią wpisaną wartość +1
+Range("A1").End(xlDown).Offset(0, 1).Value = "Forrest Gump" - Wybiera komórkę A1, zjeżdza na sam dół, zaznacza jedną komórkę w prawo i dodaje do niej wartość "Forrest Gump"
+Range("B3", Range("B3").End(xlDown)).Font.Italic = True - Od komórki B3 do ostatniej wpisanej komórki gdzie jest wartość dodaje kursywe
+Range("A1").CurrentRegion.Copy Range("A20") - Kopiuje zakres od komórki A3 do ostatniego wiersza przed pustym wierszem i wkleja wszystko co skopiował do wiersza zaczynającego się od A20
 
 
 Klawisz F8 - wykonuje program krok po kroku
