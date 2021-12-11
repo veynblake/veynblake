@@ -8,6 +8,9 @@ Range("A1").Value = "Name" - Dodaj do komórki A1 wartość "Name"
 Range("A1").Font.Italic = True - Dodaj do komórki A1 pochylenie
 Range("A1:B1").Interior.Color = vbBlue - Dodaj do komórki A1:B1 kolor niebieski
 Range("A1:B1").Interior.Color = RGB(189, 215, 238) - Dodaj do komórki A1:B1 kolor RGB
+Dim Name As String - Dodawanie zmiennej (Zmienna o nazwie "Name" która jest Stringiem (As=jako))
+Name = "Tekst Zmiennej" - Zmienna Name przybiera wartośc string "Tekst Zmiennej"
+Option Explicit - wymusza deklaracje wszystkich zmiennych. Option Explicit pozwala uchronić przed błędami powstałymi na skutek niepoprawnego wpisania nazwy zmiennej
 
 
 
