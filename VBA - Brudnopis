@@ -58,3 +58,6 @@ If ActiveCell.Offset(0, -1).Value < 35 Then - Jeśli komórka o jeden w lewo od 
 Or - Lub
 Select Case Marks -> Case Is < 35 -> Case Else -> End Select - Instrukcja która działa dopóki nie natrafi na prawdziwą opcję. End Select zamyka instrukcję
 Case 0 To 34 - Można też tak używać instrukcji Select Case
+Do While ActiveCell.Value <> "" -> If ActiveCell.Value > 5 Then Exit Do -> ActiveCell.Offset(1,0).Select-> Loop - Pętla While, która mówi że wyokan pętle aż do napotkania wartości "" -> Jeśli wartosc komórki jest wieksza niż 5 to Exit Do -> zakończ pętle
+Do Until ActiveCell.Value = "" -> ActiveCell.Offset(1,0).Select -> Loop - Pętla Until, która mówi że wykonuj pętle aż do napotkania wartości "" -> Zaznaczaj komórkę o jeden niżej -> Zakończ pętle while
+
