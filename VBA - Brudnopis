@@ -11,6 +11,7 @@ Range("A1").Font.Italic = True - Dodaj do komórki A1 pochylenie
 Range("A1:B1").Interior.Color = vbBlue - Dodaj do komórki A1:B1 kolor niebieski
 Range("A1:B1").Interior.Color = RGB(189, 215, 238) - Dodaj do komórki A1:B1 kolor RGB
 MyCell.Font.Color = vbWhite - Dodaje kolor czcionki do zmiennej MyCell, która ma przypisaną jakąś komórkę 
+Dim Marks As Byte - Dodawanie zmiennej liczbowej
 Dim Name As String - Dodawanie zmiennej (Zmienna o nazwie "Name" która jest Stringiem (As=jako))
 Dim MovieRating As Single - Dodaje zmienną przecinkową
 Dim MovieRating As Date - Dodaje zmienną datową
@@ -53,5 +54,7 @@ If -> Then -> Else -> End If - Jeśli coś -> to wykonaj -> jeśli nie to wykona
 Public MovieName As String - Zmienna MovieName staje się publiczna i można jej używać w innych modułach
 With Range("A1") -> .Font.Color -> End With - Dodaj do komórki A1 -> parametry takie jak np .Font.Color -> i zakończ With
 With.Font -> .Color -> End With - Dodaj do .Font -> .Color -> i zakończ With 
-
-Klawisz F8 - wykonuje program krok po kroku
+If ActiveCell.Offset(0, -1).Value < 35 Then - Jeśli komórka o jeden w lewo od zaznaczonej komórki jest mniejsza niż 35 to napisz fail
+Or - Lub
+Select Case Marks -> Case Is < 35 -> Case Else -> End Select - Instrukcja która działa dopóki nie natrafi na prawdziwą opcję. End Select zamyka instrukcję
+Case 0 To 34 - Można też tak używać instrukcji Select Case
