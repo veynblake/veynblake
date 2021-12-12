@@ -66,6 +66,9 @@ Each Cell In Range ("A1:A5") -> Debug.Print cell.Value -> Next Cell - Pętla Eac
 Function CurrentDate() - Tworzy funkję / Funkcja ma za zadanie wykonać obliczenia i zwrócić wartość
 End Function - Kończy funkcję
 Function CurrentDate() As Date - Tworzy funkcję która ma zwrócić datę
+Len - funkcja zwraca liczbę znaków w ciągu tekstowym.
+Left - funkcja zwraca łańcuch (String) zawierający określoną liczbę znaków od lewej strony łańcucha.
+
 
 
 
