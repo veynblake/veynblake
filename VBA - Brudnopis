@@ -53,6 +53,7 @@ MsgBox vbNewLine - Dodaje nową linię w alercie
 MsgBox "Do you like coffee?", vbYesNo - Wyświetla alert który ma opcję "Tak" lub "Nie"
 If -> Then -> Else -> End If - Jeśli coś -> to wykonaj -> jeśli nie to wykonaj -> Zakończ If
 Public MovieName As String - Zmienna MovieName staje się publiczna i można jej używać w innych modułach
+Private MovieName As String - zezwala na dostęp do niego tylko modułowi, klasie lub strukturze, która go definiuje. 
 With Range("A1") -> .Font.Color -> End With - Dodaj do komórki A1 -> parametry takie jak np .Font.Color -> i zakończ With
 With.Font -> .Color -> End With - Dodaj do .Font -> .Color -> i zakończ With 
 If ActiveCell.Offset(0, -1).Value < 35 Then - Jeśli komórka o jeden w lewo od zaznaczonej komórki jest mniejsza niż 35 to napisz fail
@@ -68,8 +69,11 @@ End Function - Kończy funkcję
 Function CurrentDate() As Date - Tworzy funkcję która ma zwrócić datę
 Len - funkcja zwraca liczbę znaków w ciągu tekstowym.
 Left - funkcja zwraca łańcuch (String) zawierający określoną liczbę znaków od lewej strony łańcucha.
-
-
+InputBox - Komunikat w którym możemy wpisać coś i się zapisze w jakiejś komórce
+On Error { GoTo [ line | 0 | -1 ] | Resume Next } - Jeśli będzie error to zrób zmienną EntryError
+EntryError: - Zmienna (patrz góra), po dwukropku możemy rozkazać co się wydarzy w czasie błędu
+Resume - Wznawia wykonywanie po zakończeniu procedury obsługi błędów. 
+On Error Resume Next  - Powoduje kontynuowanie wykonywania instrukcji bezpośrednio po instrukcji , która spowodowała błąd czasu wykonywania, lub instrukcji bezpośrednio po ostatnim wywołaniu procedury zawierającej tę On Error Resume Next instrukcje. 
 
 
 
