@@ -63,4 +63,19 @@ Do While ActiveCell.Value <> "" -> If ActiveCell.Value > 5 Then Exit Do -> Activ
 Do Until ActiveCell.Value = "" -> ActiveCell.Offset(1,0).Select -> Loop - Pętla Until, która mówi że wykonuj pętle aż do napotkania wartości "" -> Zaznaczaj komórkę o jeden niżej -> Zakończ pętle while
 For counter = 1 To 5 -> MsgBox MyRange(counter) -> Next counter - Pętla for, która ma się wykonywać w zakresie od 1 do 5 -> za kazdym razem gdy pętla się wykona to wyświetla alert z wartością counter -> Kończy pętle for
 Each Cell In Range ("A1:A5") -> Debug.Print cell.Value -> Next Cell - Pętla Each, która wykonuję się w zakresie od A1 do A5 -> Wyświetla w konsoli wartości tych komórek -> Kończ działanie pętli Each
+Function CurrentDate() - Tworzy funkję / Funkcja ma za zadanie wykonać obliczenia i zwrócić wartość
+End Function - Kończy funkcję
+Function CurrentDate() As Date - Tworzy funkcję która ma zwrócić datę
+
+
+
+
+
+
+
+
+
+
+
+
 
