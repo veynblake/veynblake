@@ -81,9 +81,9 @@ Workbook | Before Print, Active etc - Tworzy przydatne procedury np. przed wydru
 Target.Row - aktywny wiersz
 AddDetails.Show - Przypisuje do przycisku Forms o nazwie "AddDetails"
 Unload AddDetails - Jeśli wyświetlony jest forms to dodaje do przycisku opcję "Cancel"
-
-
-
+lblName.ForeColor = vbRed - Ustawia kolor obiektu na czerwony
+txtName.SetFocus - Ustawia wskaźnik na obiekcie txtName
+Exit Sub - Zamyka procedure
 
 
 
