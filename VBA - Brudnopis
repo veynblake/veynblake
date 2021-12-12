@@ -12,6 +12,7 @@ Range("A1:B1").Interior.Color = vbBlue - Dodaj do komórki A1:B1 kolor niebieski
 Range("A1:B1").Interior.Color = RGB(189, 215, 238) - Dodaj do komórki A1:B1 kolor RGB
 MyCell.Font.Color = vbWhite - Dodaje kolor czcionki do zmiennej MyCell, która ma przypisaną jakąś komórkę 
 Dim Marks As Byte - Dodawanie zmiennej liczbowej
+Dim counter as Integer - Dodawanie zmiennej liczbowej (int)
 Dim Name As String - Dodawanie zmiennej (Zmienna o nazwie "Name" która jest Stringiem (As=jako))
 Dim MovieRating As Single - Dodaje zmienną przecinkową
 Dim MovieRating As Date - Dodaje zmienną datową
@@ -60,4 +61,6 @@ Select Case Marks -> Case Is < 35 -> Case Else -> End Select - Instrukcja która
 Case 0 To 34 - Można też tak używać instrukcji Select Case
 Do While ActiveCell.Value <> "" -> If ActiveCell.Value > 5 Then Exit Do -> ActiveCell.Offset(1,0).Select-> Loop - Pętla While, która mówi że wyokan pętle aż do napotkania wartości "" -> Jeśli wartosc komórki jest wieksza niż 5 to Exit Do -> zakończ pętle
 Do Until ActiveCell.Value = "" -> ActiveCell.Offset(1,0).Select -> Loop - Pętla Until, która mówi że wykonuj pętle aż do napotkania wartości "" -> Zaznaczaj komórkę o jeden niżej -> Zakończ pętle while
+For counter = 1 To 5 -> MsgBox MyRange(counter) -> Next counter - Pętla for, która ma się wykonywać w zakresie od 1 do 5 -> za kazdym razem gdy pętla się wykona to wyświetla alert z wartością counter -> Kończy pętle for
+Each Cell In Range ("A1:A5") -> Debug.Print cell.Value -> Next Cell - Pętla Each, która wykonuję się w zakresie od A1 do A5 -> Wyświetla w konsoli wartości tych komórek -> Kończ działanie pętli Each
 
