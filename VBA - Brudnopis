@@ -88,4 +88,7 @@ txtName.SetFocus - Ustawia wskaźnik na obiekcie txtName
 Exit Sub - Zamyka procedure
 Option Base 1 - Zaczyna zakres tablicy od 1, a nie jak jest domyślnie od 0
 Redim DynamicArray(1 to Dimension1) - Lokalizuje miejsce do magazynowania dla zmiennej tablicowej, Redim NazwaZmiennejTablicy(ListaGranic)
-
+Erase DynamicArray- Służy do zwalniania zmiennych tablicy i cofniania alokacji pamięci używanej dla ich elementów.
+LBound - Najmniejszy dostępny element tablicy
+UBound - Największy dostępny element tablicy
+.Visible - Ukrywanie czegoś (np. arkusza)
