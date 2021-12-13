@@ -19,6 +19,7 @@ Dim MovieRating As Date - Dodaje zmienną datową
 Dim MyCell As Range - Dodaje zmienną komórkową
 Dim MyWS As Worksheet - Dodaje zmienną arkuszową
 Dim MsgBoxResult As VbMsgBoxResult - Dodaje zmienną alertową
+Dim CompanyName(1 To 3) As String - Dodaje zmienną tablicową
 Name = "Tekst Zmiennej" - Zmienna Name przybiera wartośc string "Tekst Zmiennej"
 Set MyCell = Range("A1") - Przypisuje do zmiennej MyCell komórkę "A1"
 Option Explicit - wymusza deklaracje wszystkich zmiennych. Option Explicit pozwala uchronić przed błędami powstałymi na skutek niepoprawnego wpisania nazwy zmiennej
@@ -84,9 +85,4 @@ Unload AddDetails - Jeśli wyświetlony jest forms to dodaje do przycisku opcję
 lblName.ForeColor = vbRed - Ustawia kolor obiektu na czerwony
 txtName.SetFocus - Ustawia wskaźnik na obiekcie txtName
 Exit Sub - Zamyka procedure
-
-
-
-
-
-
+Option Base 1 - Zaczyna zakres tablicy od 1, a nie jak jest domyślnie od 0
