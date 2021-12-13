@@ -60,6 +60,7 @@ With Range("A1") -> .Font.Color -> End With - Dodaj do komórki A1 -> parametry 
 With.Font -> .Color -> End With - Dodaj do .Font -> .Color -> i zakończ With 
 If ActiveCell.Offset(0, -1).Value < 35 Then - Jeśli komórka o jeden w lewo od zaznaczonej komórki jest mniejsza niż 35 to napisz fail
 Or - Lub
+And - Oraz
 Select Case Marks -> Case Is < 35 -> Case Else -> End Select - Instrukcja która działa dopóki nie natrafi na prawdziwą opcję. End Select zamyka instrukcję
 Case 0 To 34 - Można też tak używać instrukcji Select Case
 Do While ActiveCell.Value <> "" -> If ActiveCell.Value > 5 Then Exit Do -> ActiveCell.Offset(1,0).Select-> Loop - Pętla While, która mówi że wyokan pętle aż do napotkania wartości "" -> Jeśli wartosc komórki jest wieksza niż 5 to Exit Do -> zakończ pętle
@@ -86,3 +87,5 @@ lblName.ForeColor = vbRed - Ustawia kolor obiektu na czerwony
 txtName.SetFocus - Ustawia wskaźnik na obiekcie txtName
 Exit Sub - Zamyka procedure
 Option Base 1 - Zaczyna zakres tablicy od 1, a nie jak jest domyślnie od 0
+Redim DynamicArray(1 to Dimension1) - Lokalizuje miejsce do magazynowania dla zmiennej tablicowej, Redim NazwaZmiennejTablicy(ListaGranic)
+
