@@ -104,4 +104,7 @@ Set FolderRef = fso.GetFolder(FolderPath & "Nowy Folder") - Przechowuje dane na 
 fso.GetExtensionName(FileRef.Name) - Zwraca rozszerzenie pliku (np. xlsx)
 If Left(fso.GetExtensionName(FileRef.Name), 3) = "xls" Then - Zwraca rozszerzenie pliku xls(czyli 3) + inne koncowki tego xls (np. xlsm, xlsx)
 FolderRef.SubFolders - Zwraca kolekcję Folders składającą się ze wszystkich folderów zawartych w określonym folderze
- 
+ThisWorkbook.ExportAsFixedFormat xlTypePDF - Druk do PDF całego skoroszytu
+Arkusz1.ExportAsFixedFormat xlTypePDF - Druk do PDF arkusza o nazwie "Arkusz1"
+Arkusz1.ExportAsFixedFormat xlTypePDF, ("C:\Users\Patryk\Desktop\VBA\" & Arkusz1.Name & ".pdf") - Druk do PDF arkusza o nazwie "Arkusz1" z nazwą pliku "Arkusz1"
+Range("A1:E8").ExportAsFixedFormat xlTypePDF, ("C:\Users\Patryk\Desktop\VBA\RangePDF.pdf") - Drukuje tylko wybrany zakres do PDF
