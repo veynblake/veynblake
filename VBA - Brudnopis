@@ -20,6 +20,9 @@ Dim MyCell As Range - Dodaje zmienną komórkową
 Dim MyWS As Worksheet - Dodaje zmienną arkuszową
 Dim MsgBoxResult As VbMsgBoxResult - Dodaje zmienną alertową
 Dim CompanyName(1 To 3) As String - Dodaje zmienną tablicową
+Dim fso As Scripting.FileSystemObject - Tworzy zmienną służącą do zarządzania plikami i folderami
+Dim FileRef As Sctiping.File - Zmienna plikowa
+Dim FolderRef As Scripting.Folder - Zmienna folderowa
 Name = "Tekst Zmiennej" - Zmienna Name przybiera wartośc string "Tekst Zmiennej"
 Set MyCell = Range("A1") - Przypisuje do zmiennej MyCell komórkę "A1"
 Option Explicit - wymusza deklaracje wszystkich zmiennych. Option Explicit pozwala uchronić przed błędami powstałymi na skutek niepoprawnego wpisania nazwy zmiennej
@@ -92,3 +95,13 @@ Erase DynamicArray- Służy do zwalniania zmiennych tablicy i cofniania alokacji
 LBound - Najmniejszy dostępny element tablicy
 UBound - Największy dostępny element tablicy
 .Visible - Ukrywanie czegoś (np. arkusza)
+fso.CreateFolder - Tworzy folder
+Zmienna = "C:\Users\Patryk\Desktop\VBA\" - Zmienna do ścieżki folderowej
+?environ("userprofile") - W Inpucie wpisujemy aby zobaczyć naszą główną ścieżkę danego użytkownika
+fso.CopyFile Source:=FolderPath & "Nowy Folder\Zamówienia.xlsx", _ Destination:=FolderPath & "Test1\Zamówienia.xlsx" - Kopiuje plik "Zamówienia" z folderu "Nowy Folder" do folderu "Test1"
+If fso.FileExists(FolderPath & "Nowy Folder\Zamówienia.xls") Then -> cos -> End If - Nie wywala błędu gdy dany folder nie istnieje
+Set FolderRef = fso.GetFolder(FolderPath & "Nowy Folder") - Przechowuje dane na temat zawartości folderu "Nowy Folder"
+fso.GetExtensionName(FileRef.Name) - Zwraca rozszerzenie pliku (np. xlsx)
+If Left(fso.GetExtensionName(FileRef.Name), 3) = "xls" Then - Zwraca rozszerzenie pliku xls(czyli 3) + inne koncowki tego xls (np. xlsm, xlsx)
+FolderRef.SubFolders - Zwraca kolekcję Folders składającą się ze wszystkich folderów zawartych w określonym folderze
+ 
