@@ -1,0 +1,9 @@
+char characterName[] = "John"; - zmienna znakowa, [] daje znać kompilatorowi że chcemy przechować więcej znaków niż 1
+char characterName = 'A'; - zmienna znakowane, w której może zawrzeć jeden znak
+int characterAge = 35; - zmienna liczbowa, przechowuje liczbę całkowitą
+double gpa = 3.7 - zmienna zmiennoprzecinkowa
+printf("%s", characterName) - wyświetla na ekranie wartość zmiennej characterName
+%s - dajemy znać kompilatorowi że w tekście chcemy zawrzeć ciąg znaków
+%c - dajemy znać kompilatorowi że w tekściemy chcemy zawrzeć jeden znak
+$d - dajemy znać kompilatorowi że w tekście chcemy zawrzeć liczbę całkowitą
+%f - dajemy znać kompilatorowi że w tekście chcemy zawrzeć liczbe zmiennoprzecinkową
