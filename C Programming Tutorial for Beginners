@@ -3,7 +3,15 @@ char characterName = 'A'; - zmienna znakowane, w której może zawrzeć jeden zn
 int characterAge = 35; - zmienna liczbowa, przechowuje liczbę całkowitą
 double gpa = 3.7 - zmienna zmiennoprzecinkowa
 printf("%s", characterName) - wyświetla na ekranie wartość zmiennej characterName
+scanf("%d", &age); - przekazywanie znaków z klawiatury do programu (musi być wskaźnik przed każdą zmienną)
+fgets("%s", name, stdin); - przekazywanie znaków z pliku do programu, stdin = standardowe dane wyjściowe
 %s - dajemy znać kompilatorowi że w tekście chcemy zawrzeć ciąg znaków
 %c - dajemy znać kompilatorowi że w tekściemy chcemy zawrzeć jeden znak
 $d - dajemy znać kompilatorowi że w tekście chcemy zawrzeć liczbę całkowitą
 %f - dajemy znać kompilatorowi że w tekście chcemy zawrzeć liczbe zmiennoprzecinkową
+%lf - funkcja scanf, czyta całą liczbe zmiennoprzecinkową na wejściu i na wyjściu
+pow(5,3) - podniesie 5 do potęgi 3
+sqrt(36) - pierwiastek kwadratowy z 36
+ceil(36.365) - zaokrągla liczbę do góry, czyli 37
+floor(36.656) - zaokrągla liczbę do dołu, czyli 36
+const int num = 5; - const przypisuje num liczbe stałą o wartości 5 (nie można jej zmienić)
