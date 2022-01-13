@@ -15,3 +15,7 @@ sqrt(36) - pierwiastek kwadratowy z 36
 ceil(36.365) - zaokrągla liczbę do góry, czyli 37
 floor(36.656) - zaokrągla liczbę do dołu, czyli 36
 const int num = 5; - const przypisuje num liczbe stałą o wartości 5 (nie można jej zmienić)
+void sayHi(char name[]){} - tworzenie funkcji, z parametrem char
+sayHi("Mike"); - wstawianie funkcji do int main z parametrem char, której nadajemy wartość "Mike"
+double cube(double num){double result = num * num * num;return result;} - tworzenie zmiennej z parametrami i podaną instrukcją w środku
+printf("Answer: %f", cube(3.0)); - wyświetlanie zmiennej z parametrami + dodajemy do niej wartość.
