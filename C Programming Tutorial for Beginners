@@ -23,4 +23,3 @@ struct Student{}; - tworzenie struktury
 struct Student student1; - wstawanie struktury do int main z nadaniem nowego członu czyli student1
 student1.age = 22; - nadanie parametru age o wartosci 22 dla student1 w int main
 strcpy(student1.name, "Jim"); - nadanie wartości dla char name o wartości "Jim" dla student1 w int main
-
