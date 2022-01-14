@@ -19,3 +19,8 @@ void sayHi(char name[]){} - tworzenie funkcji, z parametrem char
 sayHi("Mike"); - wstawianie funkcji do int main z parametrem char, której nadajemy wartość "Mike"
 double cube(double num){return num * num * num;;} - tworzenie zmiennej z parametrami i podaną instrukcją w środku, która zwraca wartość podaną w printf poniżej
 printf("Answer: %f", cube(3.0)); - wyświetlanie zmiennej z parametrami + dodajemy do niej wartość.
+struct Student{}; - tworzenie struktury
+struct Student student1; - wstawanie struktury do int main z nadaniem nowego członu czyli student1
+student1.age = 22; - nadanie parametru age o wartosci 22 dla student1 w int main
+strcpy(student1.name, "Jim"); - nadanie wartości dla char name o wartości "Jim" dla student1 w int main
+
