@@ -9,6 +9,7 @@ fgets("%s", name, stdin); - przekazywanie znaków z pliku do programu, stdin = s
 %c - dajemy znać kompilatorowi że w tekściemy chcemy zawrzeć jeden znak
 $d - dajemy znać kompilatorowi że w tekście chcemy zawrzeć liczbę całkowitą
 %f - dajemy znać kompilatorowi że w tekście chcemy zawrzeć liczbe zmiennoprzecinkową
+%p - dajemy znać kompilatorowi że w tekście chcemy zawrzeć miejsce w pamięci
 %lf - funkcja scanf, czyta całą liczbe zmiennoprzecinkową na wejściu i na wyjściu
 pow(5,3) - podniesie 5 do potęgi 3
 sqrt(36) - pierwiastek kwadratowy z 36
@@ -23,3 +24,15 @@ struct Student{}; - tworzenie struktury
 struct Student student1; - wstawanie struktury do int main z nadaniem nowego członu czyli student1
 student1.age = 22; - nadanie parametru age o wartosci 22 dla student1 w int main
 strcpy(student1.name, "Jim"); - nadanie wartości dla char name o wartości "Jim" dla student1 w int main
+int nums[3][2] = {{1,2},{3,4}}; - tworzenie tablicy dwuwymiarowej
+*pAge - wskaźnik
+&age - nadanie adresu pamięci
+FILE *fpointer = fopen("employees.txt", "w"); - Operacje na pliku, *fpointer = nazwa pliku w programie, fopen = otwarcie pliku, "empleyees.txt" - nazwa pliku
+("w"); - Operacje na pliku, otwarcie pliku do zapisu
+("a"); - Operacje na pliku, otwarcie pliku w celu dopisania na koniec pliku
+("r"); - Operacje na pliku, otwarcie pliku w trybie tekstowym do odczytu
+fprintf(fpointer, "\nXDDD"); - Operacje na pliku, odczyt lub nadpis do pliku jakiegoś tekstu, f dodajemy na operacjach z plikami, fpointer = nazwa i miejsce pliku w programie
+fclose(fpointer); - Operacje na pliku, zamknięcie pliku (np. w celu zwolnienia pamięci)
+char line[255]; - Operacje na pliku, poinformowanie programu żeby mógł przechować 255 znaków
+fgets(line, 255, fpointer); - Operacje na pliku, pobieranie danych z pliku, (pamiec char, ilosc znaków, nazwa pliku w programie)
+printf("%s", line); - Operacje na pliku, wyświetlanie danych z pliku ("line"!!!)
