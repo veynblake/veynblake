@@ -23,3 +23,6 @@ nano - edytor plikow
 touch - stworz plik
 date - pokazuje date i godzine
 time - pokazuje czas w ktorym zostalo wykonane zadanie
+man - dokumentacja dotycząca jakiegoś polecenia (np. man whoami)
+touch - stwórz plik
+open - otwórz plik
