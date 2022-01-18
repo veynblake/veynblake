@@ -26,3 +26,149 @@ time - pokazuje czas w ktorym zostalo wykonane zadanie
 man - dokumentacja dotycząca jakiegoś polecenia (np. man whoami)
 touch - stwórz plik
 open - otwórz plik
+head - wyświetlanie początkowej części pliku
+tail - wyświetlenie ostatnich cześci plików
+wc - Drukowanie informacji o zawartości pliku (ilość wierszy, ilość słów, ilość bajtów i nazwę pliku)
+sort - Sortuj linie plików tekstowych
+uniq - Zgłoś lub pomiń powtarzające się linie
+ps - Wyświetlanie informacji o wszystkich procesach
+top - Wyświetlanie informacji o najważniejszych procesach
+kill - Wysłanie sygnału (zakończenia) do procesu
+killall - Zakończenie wszystkich procesów o podanej nazwie
+ln - Utwórz dowiązanie (skrót)
+factor - Podziel liczbę, na liczby pierwsze
+seq - Wyświetl sekwencje liczb
+
+=====================================
+
+cd	-	Zmiana katalogu
+cp	-	Kopiowanie plików i katalogów
+dd (n/a)	-	Przekształć i skopiuj plik
+install (n/a)	-	Kopiuj plik i ustaw atrybuty
+mv	-	Przenieś (zmień nazwę) plik lub katalog
+rm	-	Usuń plik lub katalog
+shred	-	Usuń plik lub katalog w bezpieczniejszy sposób
+ls	-	Wyświetl zawartość folderu
+cat	-	Połącz pliki i wyświetl zawartość na standardowe wyjście
+tac	-	Połącz pliki i wyświetl zawartość na standardowe wyjście w odwróconej kolejności
+nl	-	Wyświetl zawartość pliku wraz z ponumerowanymi wierszami
+od (n/a)	-	Wyświetl zawartość pliku w jednym z kilku formatów liczbowych
+base64	-	Przekształć dane do drukowalnej postaci
+fmt (n/a)	-	Program formatujący tekst
+pr (n/a)	-	Przekształć tekst do drukowania
+fold	-	Zawijaj linię, aby dopasować do określonej długości
+head	-	Wyświetl początkową część pliku
+tail	-	Wyświetl końcową część pliku
+split	-	Rozdziel plik na kawałki
+csplit	-	Rozdziel plik na kawałki
+grep (n/a)	-	Wyświetlanie tekstu pasującego do wzorca
+wc	-	Wyświetl nową linię, słowo i ilość bajtów dla każdego pliku
+sum	-	Wyświetl sumę kontrolną
+cksum (n/a)	-	Wyświetl sumę kontrolną CRC
+md5sum (n/a)	-	Wyświetl lub sprawdź sumę kontrolną MD5
+sha1sum (n/a)	-	Wyświetl lub sprawdź sumę kontrolną SHA - 1
+sha2 (n/a)	-	Wyświetl lub sprawdź sumę kontrolną SHA - 2
+sort (n/a)	-	Sortuj linie plików tekstowych
+shuf (n/a)	-	Mieszaj linie plików tekstowych
+uniq (n/a)	-	Zgłoś lub pomiń powtarzające się linie
+comm (n/a)	-	Porównaj dwa pliki linia po linii
+ptx (n/a)	-	Wyświetl indeks zawartości pliku
+tsort (n/a)	-	Wykonaj topologiczne sortowanie
+test	-	Sprawdź typy plików i porównaj wartości
+cut (n/a)	-	Wytnij część z każdej linii z pliku
+paste (n/a)	-	Połącz linie z pliku
+join (n/a)	-	Połącz linie dwóch plików w jedną strukturę
+tr	-	Przetłumacz, albo usuń znaki
+expand (n/a)	-	Zamień tabulacje na spacje
+unexpand (n/a)	-	Zamień spacje na tabulacje
+link (n/a)	-	Utwórz twarde dowiązanie (skrót)
+ln (n/a)	-	Utwórz dowiązanie (skrót)
+mkdir	-	Utwórz katalog
+mkfifo (n/a)	-	Utwórz FIFO
+mknod (n/a)	-	Utwórz blok lub znak specjalny plików
+readlink (n/a)	-	Wyświetl na co wskazuje dowiązanie
+rmdir	-	Usuń pusty katalog
+unlink (n/a)	-	Usuń dowiązanie
+chown (n/a)	-	Zmień właściciela i grupę pliku
+chgrp (n/a)	-	Zmień grupę pliku
+chmod	-	Zmień prawa dostępu do pliku
+touch (n/a)	-	Zmień datę ostatniej modyfikacji, lub utwórz nowy plik
+umask	-	Maskowanie uprawnień
+dirname (n/a)	-	Wyświetl nazwę katalogu
+basename	-	Wyświetl nazwę pliku
+pathchk	-	Sprawdź czy nazwy plików są poprawne i przenośne
+df	-	Wyświetl informacje o dostępnej przestrzeni dyskowej
+du	-	Ustal ile miejsca na dysku zajmuje plik
+stat	-	Wyświetl status pliku lub systemu plików
+truncate (n/a)	-	Zmniejsz lub zwiększ rozmiar pliku
+at (n/a)	-	Jednorazowe wykonanie polecenia w sprecyzowanym czasie
+chroot (n/a)	-	Uruchomienie programu ze zmienionym katalogiem głównym
+cron (n/a)	-	Regularne uruchamianie programów
+env (n/a)	-	Uruchomienie programu ze zmienionym środowiskiem
+nohup (n/a)	-	Uruchomienie programu odpornego na zawieszanie się
+timeout (n/a)	-	Uruchomienie programu z limitem czasowym
+kill (n/a)	-	Wysłanie sygnału (zakończenia) do procesu
+killall (n/a)	-	Zakończenie wszystkich procesów o podanej nazwie
+ps (n/a)	-	Wyświetlanie informacji o wszystkich procesach
+top (n/a)	-	Wyświetlanie informacji o najważniejszych procesach
+watch	-	Monitorowanie wyniku polecenia
+halt (n/a)	-	-
+poweroff (n/a)	-	-
+reboot (n/a)	-	Restart systemu
+shutdown (n/a)	-	-
+nice (n/a)	-	Uruchamianie procesów ze zmienionymi prioretytami
+passwd	-	-
+su	-	Logowanie na konto innego użytkownika
+sudo (n/a)	-	Uruchomienie programu z uprawnieniami administratora
+who	-	Wyświetlanie informacji o zalogowanych użytkownikach
+w	-	Wyświetlanie informacji o zalogowanych użytkownikach (więcej szczegółów)
+whoami	-	Wyświetlanie informacji (bieżacy uid) o użytkowniku z którego prawami działamy
+groups	-	Wyświetlanie grup do których należy użytkownik
+groupadd (n/a)	-	Tworzenie nowej grupy
+groupmod (n/a)	-	Modyfikacja grupy
+groupdel (n/a)	-	Usuwanie grupy grupy
+users	-	Wyświetlalnie nazwy użytkowników aktualnie zalogowanych
+useradd	-	Dodawanie konta użytkownika
+usermod (n/a)	-	Modyfikacja konta użytkownika
+userdel (n/a)	-	Usuwanie konta użytkownika
+logname	-	Wyświetlanie loginu użytkownika
+id	-	Wyświetlanie identyfikatoru użytkownika
+arch	-	Wyświetlanie nazwy architektury procesoras
+date (n/a)	-	Wyświetlanie bądź ustawienie daty i czasu
+uname	-	Wyświetlanie informacji systemowych
+hostname	-	Wyświetlanie lub ustawienie nazwy hosta
+hostid	-	Wyświetlanie numerycznego indentyfikatora hosta
+uptime	-	Wyświetlanie informacji o tym jak długo system jest włączony
+lsmod	-	Wyświetlanie informacji o zawartych modułach w jądrze
+lsof (n/a)	-	Wyświetlanie informacji o otwartych plikach
+lsb_release	-	Wyświetlanie informacji o dystrybucji
+pwd	-	Wyświetlanie bieżącego katalogu
+stty (n/a)	-	Zmień i wyświetl ustawienia terminala
+printenv	-	Wyświetl wszystkie lub częściowe informacje o środowisku
+tty	-	Wyświetl nazwę terminala podłączonego do standardowego wejścia
+dpkg (n/a)	-	Instalowanie oprogramowania za pomocą menadżera pakietów
+apt-get (n/a)	-	Zarządzanie pakietami
+aptitude (n/a)	-	Zarządzanie pakietami
+echo	-	Wyświetlanie tekstu ze standardowego wejścia na standardowe wyjście
+printf (n/a)	-	Sformatuj i wyświetl tekst
+yes (n/a)	-	Wyświetlaj tekst w nieskończoność, aż do zabicia procesu
+read (n/a)	-	Pobieranie tekstu ze standardowego wejścia
+tee (n/a)	-	Pobieranie tekstu ze standardowego wejścia
+ifconfig (n/a)		Konfigurowanie interfejsu karty sieciowej
+iwconfig (n/a)		Konfigurowanie interfejsu karty bezprzewodowej
+iwgetid (n/a)		Wyświetlanie ESSID sieci bezprzewodowej
+iwlist (n/a)		Wyświetlanie szczegółowych informacji uzyskanych z interfejsu
+iwspy (n/a)		Pobieranie statystyk ze sprecyzowanego węzła
+wget (n/a)		Pobieranie plików w konsoli
+lspci (n/a)	-	Wyświetlanie informacji o wszystkich urządzeniach PCI
+lsusb	-	Wyświetlanie informacji o wszystkich urządzeniach USB
+lscpu	-	Wyświetlanie informacji o procesorze
+lspcmcia (n/a)	-	Wyświetlanie informacji o urządzeniu PCMCIA
+lshal (n/a)	-	Wyświetlanie informacji o wszystkich urządzeniach HAL
+lshw	-	Wyświetlanie informacji o urządzeniach
+clear	-	-
+man	-	Wyświetlanie pomocy za pośrednictwem elektronicznego podręcznika
+expr (n/a)	-	-
+sleep	-	-
+factor	-	Podziel liczbę, na liczby pierwsze
+seq	-	Wyświetl sekwencje liczb
