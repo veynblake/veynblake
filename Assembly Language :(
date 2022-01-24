@@ -1,3 +1,11 @@
 int 21h - przerwanie instrukcji
 13, 10 - koniec bieżącej linii tekstu
 mov ah, 4ch - przechowywanie wartosci szesnastkowej 4C do rejestru AH
+EAX - używany głównie w czasie operacji arytmetycznych
+EBX - rejestr bazowy, wraz z rejestrem segmentowym DS tworzą wskaźnik na przestrzeń danych
+ECX - rejestr służący głownie jako licznik w zapętlonych operacjach
+EDX - rejestr danych, używany do operacji arytmetycznych oraz obsługi wejścia-wyjścia
+ESP - wskaźnik wierzchołka stosu
+EBP - wskaźnik do danych w segmencie stosu
+ESI - rejestr indeksowy, wskaźnik źródła
+EDI - rejestr indeksowy, wskaźnik przeznaczenia
