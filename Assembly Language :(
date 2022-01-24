@@ -1,0 +1,3 @@
+int 21h - przerwanie instrukcji
+13, 10 - koniec bieżącej linii tekstu
+mov ah, 4ch - przechowywanie wartosci szesnastkowej 4C do rejestru AH
