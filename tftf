@@ -96,7 +96,15 @@ ________________________________________________________________________________
 
 1. Napisz skrypt, który dla wybraniego użytkownika wyświetla statystykę używanych komend w postaci posortowanej listy: ilość komendia (wsk.należy użyć polecenia history)
 
-
+#!/bin/bash 
+HISTFILE=~/.bash_history
+set -o history
+history | 
+tr -s ' ' '\t' | 
+cut -f3 | 
+sort | 
+awk '$0 == prev {count++; prev = $0} $0 != prev {print prev " " count; count=1; prev=$0}' | 
+sort -n -r -k2
 
 ______________________________________________________________________________________________
 
