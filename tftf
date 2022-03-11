@@ -1,3 +1,5 @@
+ZADANIE1
+
 1. W katalogu domowym utwórz jednym poleceniem strukturę katalogów kat1/kat2/kat3/kat4
   mkdir -p ~/kat1/kat2/kat3/kat4
   find ~/kat1
@@ -16,7 +18,7 @@
 
 5. Do nazwy dowolnego pliku z katalogu kat2 dodaj przedrostek old
   mv dpkg.log olddpkg.log
-  
+  find olddpkg.log
 
 6. Przy pomocy programu locate znajdź wszystkie pozycje, które posiadają w nazwie słowo pwck
   locate pwck
@@ -31,7 +33,8 @@
   getent group pracownicy
 
 9. Zmień jednym poleceniem we wszystkich plikach i katalogach kat2 grupę właścicieli na pracownicy
-  
+  chown -R :pracownicy /home/patryk/ZadaniaEgzamin/Zadanie1/kat1/kat2
+  ls -l
 
 10. Dla katalogu kat1 i wszystkich jego podkatalogów odbierz prawo przeglądania dla pozostałych użytkownikow
   chmod o-r ~/kat1
