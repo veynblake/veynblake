@@ -1,4 +1,4 @@
-ZADANIE1
+ZADANIE 1
 ______________________________________________________________________________________________
 1. W katalogu domowym utwórz jednym poleceniem strukturę katalogów kat1/kat2/kat3/kat4
   mkdir -p ~/kat1/kat2/kat3/kat4
@@ -45,5 +45,25 @@ ________________________________________________________________________________
   ls -l ~/kat1a
 ______________________________________________________________________________________________
 
-ZADANIE2
+ZADANIE 2
 ______________________________________________________________________________________________
+
+1. Wyświetl linie o numerach 3,4 i 5 z pliku /etc/passwd
+  head -qn5 /etc/passwd | tail -n3
+  -
+  
+2. Za pomocą filtru tr wykonaj modyfikację pliku, polegającą na umieszczeniu każdego słowa w osobnej linii
+  echo "`cat /etc/passwd | xargs | tr ' ' '\n'`" > newfile
+  -
+
+3. Zlicz wszystkie katalogi znajdujące się w katalogu /etc i jego podkatalogach
+  find /etc/*/ -type d | wc -l
+  -
+  
+4. Wyświetl listę plików z aktualnego katalogu i jego podkatalogów, zamieniając wszystkie duże litery na małe
+  find . -type f | tr "[:upper:]" "[:lower:]"
+  -
+  
+5. Wyświetl zawartość pliku /etc/passwd posortowaną wg numerów GID w kolejności od największego do najmniejszego
+  cat /etc/passwd | tr ':' ' ' | sort -nrk4 | tr ' ' ':'
+  -
