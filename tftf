@@ -1,5 +1,5 @@
 ZADANIE1
-
+______________________________________________________________________________________________
 1. W katalogu domowym utwórz jednym poleceniem strukturę katalogów kat1/kat2/kat3/kat4
   mkdir -p ~/kat1/kat2/kat3/kat4
   find ~/kat1
@@ -43,3 +43,7 @@ ZADANIE1
 11. Utwórz dowiązanie do katalogu kat1 o nazwie kat1a w katalogu domowym.
   ln -s ~/kat1 ~/kat1a
   ls -l ~/kat1a
+______________________________________________________________________________________________
+
+ZADANIE2
+______________________________________________________________________________________________
