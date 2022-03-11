@@ -88,3 +88,35 @@ do
 	echo -n "$(($RANDOM  % 11)) " >> $1
 done
 echo "" >> $1
+
+______________________________________________________________________________________________
+
+ZADANIE 4
+______________________________________________________________________________________________
+
+1. Napisz skrypt, który dla wybraniego użytkownika wyświetla statystykę używanych komend w postaci posortowanej listy: ilość komendia (wsk.należy użyć polecenia history)
+
+
+
+______________________________________________________________________________________________
+
+ZADANIE 5
+______________________________________________________________________________________________
+
+1. Napisać skrypt który przyjmuje n+1 argumentów. Pierwszy argument to plik wyjściowy, pozostale - pliki wejsciowe. Dla każdego pliku wejściowego w pliku wyjściowym zostanie
+umieszczonych 5 następujących linii.
+
+a. Ścieżka do pliku wejściowego
+b. Data modyfikacji pliku wejściowego
+c. Trzy pierwsze linie pliku wejściowego
+
+W momencie wywołania skrypt ma sprawdzić czy plik wyjściowy NIE istneje, a wszystkie pliki wejściowe istnieją
+
+#!/bin/bash
+if [[ -f $1 ]]; then echo "Plik wyjsciowy juz istnieje!"; exit; fi
+for i in ${@:2:$#-1}; do
+	if ! [[ -f $i ]]; then echo "$i - nie ma takiego pliku!"; continue; fi
+	realpath $i >> $1
+	ls -lc $i | xargs | cut -d ' ' -f8 >> $1
+	head -qn3 $i >> $1
+done
