@@ -1,0 +1,42 @@
+1. W katalogu domowym utwórz jednym poleceniem strukturę katalogów kat1/kat2/kat3/kat4
+  mkdir -p ~/kat1/kat2/kat3/kat4
+  find ~/kat1
+
+2. Zmień bieżący katalog powłoki na kat2
+  cd ~/kat1/kat2
+  pwd
+  
+3. Usuń jednym poleceniem całą strukturę katalogów kat3/kat4
+  rm -r kat3
+  find ~/kat1/kat2
+  
+4. Skopiuj jednym poleceniem wszystkie pliki z rozszerzeniem log z katalogu /var/log do katalogu kat2
+  cp /var/log/*.log .
+  find ./*.log
+
+5. Do nazwy dowolnego pliku z katalogu kat2 dodaj przedrostek old
+  mv dpkg.log olddpkg.log
+  
+
+6. Przy pomocy programu locate znajdź wszystkie pozycje, które posiadają w nazwie słowo pwck
+  locate pwck
+  -
+
+7. Skopiuj wszystkie pliki zwykłe o rozmiarze pomiędzy 20 a 100 bajtów z katalogu /usr/bin do katalogu kat1 (wykorzystaj poloecenie find z parametrem -exec)
+  find usr/bin/ -type f -size +20c -size -100c exec cp '{}' /home/patryk/ZadaniaEgzamin/Zadanie1/kat1 \;
+  ls -l /home/patryk/ZadaniaEgzamin/Zadanie1/kat1
+
+8. Utwórz grupę o nazwie pracownicy (  apt-get install addgroup/groupadd)
+  sudo addgroup pracownicy
+  getent group pracownicy
+
+9. Zmień jednym poleceniem we wszystkich plikach i katalogach kat2 grupę właścicieli na pracownicy
+  
+
+10. Dla katalogu kat1 i wszystkich jego podkatalogów odbierz prawo przeglądania dla pozostałych użytkownikow
+  chmod o-r ~/kat1
+  ls -dl ~/kat1/
+
+11. Utwórz dowiązanie do katalogu kat1 o nazwie kat1a w katalogu domowym.
+  ln -s ~/kat1 ~/kat1a
+  ls -l ~/kat1a
