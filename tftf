@@ -67,3 +67,24 @@ ________________________________________________________________________________
 5. Wyświetl zawartość pliku /etc/passwd posortowaną wg numerów GID w kolejności od największego do najmniejszego
   cat /etc/passwd | tr ':' ' ' | sort -nrk4 | tr ' ' ':'
   -
+  
+______________________________________________________________________________________________
+
+ZADANIE 3
+______________________________________________________________________________________________
+
+1. Napisać skrypt zapisujący w pliku n liczb losowych z przedeziału [0,10]. Kolejne liczby powinny znajdować się w jednej linii. Argumenty skryptu: nazwa pliku oraz liczba n
+
+#!/bin/bash
+re='^[0-9]+$'
+if ! [[ $2 =~ $re ]]; 
+then 
+echo "Podana wartosc nie jest liczba dodatnia!"; 
+exit; 
+fi
+echo -n "" >$1
+for ((i=0;i<$2;i++))
+do
+	echo -n "$(($RANDOM  % 11)) " >> $1
+done
+echo "" >> $1
