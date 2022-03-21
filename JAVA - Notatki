@@ -1,1 +1,25 @@
+System.out.println("Hello World"); - Wyświetlanie na ekranie
+Scanner scanner = new Scanner(System.in); String name = scanner.nextLine(); - Wpisywanie do konsoli
+if (name.endsWith("a")) {System.out.println("Jesteś kobietą");} - If
+endsWith() - Określa, czy koniec tego wystąpienia ciągu pasuje do określonego znaku.
+else if (name.endsWith("l")){System.out.println("Twoje imie kończy się na litere l");} - Else if
+else{System.out.println("Jesteś mężczyzną");} - Else
+if (!name.isEmpty() && name.endsWith("a")) - !name.isEmpty() sprawdza czy nie jest puste
+name.equals() - metoda która służy do porównywania typów obiektowych (np || name.equals("Barnaba"))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                        Skróty klawiszowe
+
+ctrl + alt + v = tworzenie zmiennej
