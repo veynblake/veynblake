@@ -7,11 +7,13 @@ else{System.out.println("Jesteś mężczyzną");} - Else
 if (!name.isEmpty() && name.endsWith("a")) - !name.isEmpty() sprawdza czy nie jest puste
 name.equals() - metoda która służy do porównywania typów obiektowych (np || name.equals("Barnaba"))
 boolean isSkyBlue = true; - typ przechowujący wartości prawda/fałsz
-
-
-
-
-
+for (int i = 0; i < 10; i++){System.out.println(i);} - Pętla For
+i+= 2 - zwiększanie o 2
+while (i < 10) {System.out.println("i mniejsze od 10");i++;} - Pętla While
+do {System.out.println("i mniejsze od 10");} while (isSkyBlue); - Pętla Do..While
+break - natychmiastowego zakończenia pętli
+continue - przerywa aktualne wywołanie pętli, ale przechodzi do następnej iteracji pętli
+i % 5 == 0 - liczba podzielna przez 5
 
 
 
