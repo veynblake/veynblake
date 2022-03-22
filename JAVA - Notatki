@@ -18,6 +18,8 @@ i % 5 == 0 - liczba podzielna przez 5
 new - Utworzenie nowego obiektu - czyli instancji klasy
 Random random = new Random();int numberToGuess = random.Int(100) + 1; - generator liczby losowej
 String[] names = new String[4]; - Tablice
+String[] names = {1,2,3,4} - Tablice - inny sposób
+for (String name : names){System.out.println(name);} - Pętla for each, weź tablice names, stwórz dla każdego elementu zmienną name i wyświetl na ekranie.
 array.length - Cała długość tablicy (np wyświetla całą tablice przy sout)
 
 
@@ -26,3 +28,4 @@ array.length - Cała długość tablicy (np wyświetla całą tablice przy sout)
                                                         Skróty klawiszowe
 
 ctrl + alt + v = tworzenie zmiennej
+ctrl + / - komentarze
