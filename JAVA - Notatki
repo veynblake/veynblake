@@ -1,5 +1,6 @@
 System.out.println("Hello World"); - Wyświetlanie na ekranie
 Scanner scanner = new Scanner(System.in); String name = scanner.nextLine(); - Wpisywanie do konsoli
+nextLine() - wstrzymuje działanie programu do momentu, w którym użytkownik wpisze coś w konsoli i zatwierdzi enterem
 if (name.endsWith("a")) {System.out.println("Jesteś kobietą");} - If
 endsWith() - Określa, czy koniec tego wystąpienia ciągu pasuje do określonego znaku.
 else if (name.endsWith("l")){System.out.println("Twoje imie kończy się na litere l");} - Else if
@@ -14,10 +15,10 @@ do {System.out.println("i mniejsze od 10");} while (isSkyBlue); - Pętla Do..Whi
 break - natychmiastowego zakończenia pętli
 continue - przerywa aktualne wywołanie pętli, ale przechodzi do następnej iteracji pętli
 i % 5 == 0 - liczba podzielna przez 5
-
-
-
-
+new - Utworzenie nowego obiektu - czyli instancji klasy
+Random random = new Random();int numberToGuess = random.Int(100) + 1; - generator liczby losowej
+String[] names = new String[4]; - Tablice
+array.length - Cała długość tablicy (np wyświetla całą tablice przy sout)
 
 
 
