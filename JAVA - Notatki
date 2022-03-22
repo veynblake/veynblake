@@ -35,7 +35,8 @@ Set<String> keys = nameToMeal.keySet(); - Wyświetlanie mapy z kluczami
 Collection<String> values = nameToMeal.values(); - Wyświetlanie mapy z wartościami
 System.out.println(nameToMeal.containsKey("Mariusz")); - Sprawdzanie czy jest podany klucz
 System.out.println(nameToMeal.containsValue("Pizza")); - Sprawdzanie czy jest taka wartość
-
+switch (userChoice) {case 1 -> System.out.println("wybrano 1");} - Switch, czyli wybieranie opcji
+Party party = new Party(); - Dodanie klasy do Maina i przypisanie jej do klasy party
 
 
 
