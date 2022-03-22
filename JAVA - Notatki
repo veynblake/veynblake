@@ -21,8 +21,15 @@ String[] names = new String[4]; - Tablice
 String[] names = {1,2,3,4} - Tablice - inny sposób
 for (String name : names){System.out.println(name);} - Pętla for each, weź tablice names, stwórz dla każdego elementu zmienną name i wyświetl na ekranie.
 array.length - Cała długość tablicy (np wyświetla całą tablice przy sout)
-
-
+List<String> names = new ArrayList<>(); - Lista Tablicy
+names.add("Mariusz"); - Dodawanie elementu do tablicy
+names.remove("Mariusz"); - Usuwanie elementu z tablicy
+names.contains("Dominik"); - Sprawdza czy element znajduję się na liście
+names.get(0); - Pobieranie elementu z listy
+names.isEmpty(); - Sprawdzanie czy lista jest pusta
+names.clear(); - Wyczyszczenie listy
+Collections.sort(names); - Sortowanie listy
+Set<String> meals = new HashSet<>(); - prawie jak Lista Tablicy, ale nie są dozwolone duplikaty elementów.
 
 
                                                         Skróty klawiszowe
