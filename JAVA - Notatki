@@ -30,6 +30,13 @@ names.isEmpty(); - Sprawdzanie czy lista jest pusta
 names.clear(); - Wyczyszczenie listy
 Collections.sort(names); - Sortowanie listy
 Set<String> meals = new HashSet<>(); - prawie jak Lista Tablicy, ale nie są dozwolone duplikaty elementów.
+Map<String, String> nameToMeal = new HashMap<>(); nameToMeal.put("Mariusz", "Pizza"); - obiekt mapujący wartości parametrów na podstawie klucza. 
+Set<String> keys = nameToMeal.keySet(); - Wyświetlanie mapy z kluczami
+Collection<String> values = nameToMeal.values(); - Wyświetlanie mapy z wartościami
+System.out.println(nameToMeal.containsKey("Mariusz")); - Sprawdzanie czy jest podany klucz
+System.out.println(nameToMeal.containsValue("Pizza")); - Sprawdzanie czy jest taka wartość
+
+
 
 
                                                         Skróty klawiszowe
