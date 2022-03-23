@@ -41,7 +41,7 @@ this.name = name; - this jest po to żeby java wiedziała że ma przypisać argu
 int phoneNumber = Integer.valueOf(scanner.nextLine()); - Piszemy liczbe int, ale zeby po wcisnieciu entera cos sie robilo wpisujemy to
 String isVegarString = isVegan ? "tak" : "nie"; - isVegan jest boolean, po znaku zapytania wyświetlamy co ma się wyświetlić jak będziee true, a po dwukropku false
 
-                                                        Skróty klawiszowe
+                                                        Skróty klawiszowe 
 
 ctrl + alt + v = tworzenie zmiennej
 ctrl + / - komentarze
