@@ -37,10 +37,14 @@ System.out.println(nameToMeal.containsKey("Mariusz")); - Sprawdzanie czy jest po
 System.out.println(nameToMeal.containsValue("Pizza")); - Sprawdzanie czy jest taka wartość
 switch (userChoice) {case 1 -> System.out.println("wybrano 1");} - Switch, czyli wybieranie opcji
 Party party = new Party(); - Dodanie klasy do Maina i przypisanie jej do klasy party
-
-
+this.name = name; - this jest po to żeby java wiedziała że ma przypisać argument name do pola name w klasie
+int phoneNumber = Integer.valueOf(scanner.nextLine()); - Piszemy liczbe int, ale zeby po wcisnieciu entera cos sie robilo wpisujemy to
+String isVegarString = isVegan ? "tak" : "nie"; - isVegan jest boolean, po znaku zapytania wyświetlamy co ma się wyświetlić jak będziee true, a po dwukropku false
 
                                                         Skróty klawiszowe
 
 ctrl + alt + v = tworzenie zmiennej
 ctrl + / - komentarze
+ppm -> Generate -> Constructor -> Wybieramy wszystko - tworzenie konstruktora
+ppm -> Generate -> Getter -> Wybieramy wszystko - tworzenie Gettera, metody która umożliwia pobranie wartości prywatnego pola z zewnątrz.
+ppm -> Generate -> Setter -> Wybieramy wszystko - tworzenie Settera, metody która umożliwia zmiane wartości prywatnego pola z zewnątrz.
