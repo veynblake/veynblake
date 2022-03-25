@@ -41,6 +41,11 @@ this.name = name; - this jest po to żeby java wiedziała że ma przypisać argu
 int phoneNumber = Integer.valueOf(scanner.nextLine()); - Piszemy liczbe int, ale zeby po wcisnieciu entera cos sie robilo wpisujemy to
 String isVegarString = isVegan ? "tak" : "nie"; - isVegan jest boolean, po znaku zapytania wyświetlamy co ma się wyświetlić jak będziee true, a po dwukropku false
 public Garnek(int srednica, int wysokosc, String kolor) {this.srednica = srednica;this.wysokosc = wysokosc;this.kolor = kolor;} - Konstruktor
+final int srednica; - Final słowo kluczowe w języku programowania Java, które zależnie od użytego kontekstu oznacza niezmienność deklarowanego elementu.
+public String gotuj() {return "Gotowanie w trakcie";} - metoda w Javie
+return; - kończy wywołanie danej metody i zwraca wartość
+
+
                                                         Skróty klawiszowe 
 
 ctrl + alt + v = tworzenie zmiennej
